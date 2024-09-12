@@ -11,7 +11,7 @@ const LeftNavMenuItem = ({ text, icon, action, className}) => {
         <span className='text-xl mr-5'>{icon}</span>
         {text}
     </div>
-  )
-}
+  );
+};
 
-export default LeftNavMenuItem
+export default LeftNavMenuItem;

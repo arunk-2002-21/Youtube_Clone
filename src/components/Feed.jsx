@@ -25,14 +25,14 @@ const Feed = () => {
                          key={item?.video.videoId}
                          video={item?.video} 
               />
-            )
+            );
           })
 
-          }
+          };
           </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feed
+export default Feed;

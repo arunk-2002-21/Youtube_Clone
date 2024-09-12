@@ -10,8 +10,9 @@ const SuggestionVideoCard = ({video}) => {
     <Link to={`/video/${video?.videoId}`}>
       <div className="flex mb-3">
         <div className="relative h-24 lg:h-20 xl:h-24 w-40 min-w-[168px] lg:w-32 lg:min-w-[128px] xl:w-40 xl:min-w-[168px] rounded-xl bg-state-800 overflow-hidden">
-          <img className='h-full w-full object-cover' 
-              src={video?.thumbnails?.[0]?.url} 
+          <img 
+              className='h-full w-full object-cover' 
+              src={video?.thumbnails[0]?.url} 
          />
 
           {video?.lengthSeconds && (
@@ -36,14 +37,14 @@ const SuggestionVideoCard = ({video}) => {
                 <span className="flex text-[24px] leading-none font-bold text-white/[0.7] relative top-[-10px] mx-1">
                   .
                 </span>
-                <span>
+                <span className='turncate'>
                   {video?.publishedTimeText}
                 </span>
               </div>
             </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default SuggestionVideoCard
+export default SuggestionVideoCard;
